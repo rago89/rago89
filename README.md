@@ -1,4 +1,4 @@
-# Hi my name is Rafael i live in Mons :belgium: I'm a web developer student :smiley
+# Hi my name is Rafael i live in Mons belgium I'm a web developer student of Hack Your Future Belgium
 
 **rago89/rago89** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
