@@ -1,0 +1,324 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: auto;
+    width: 90%;
+}
+
+header {
+    height: 100px;
+    background-color: #010033;
+}
+
+
+/*NAV BAR*/
+#navbar li {
+    display: inline;
+    list-style: none;
+    padding-right: 15px;
+}
+
+.head-photo-name h1 {
+    display: inline;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.rafael-profile {
+    padding-top: 10px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#navbar a:hover {
+    color: #187EB5;
+}
+
+/*SHOWCASE*/
+
+#showcase .row {
+    height: 824px;
+}
+
+.social a {
+    padding-left: 15px;
+}
+
+#showcase h2 {
+    font-size: 80px;
+}
+
+#showcase p {
+    font-size: 35px;
+}
+
+.social h3 {
+    font-size: 25px;
+}
+
+.social img:hover {
+    width: 85px;
+}
+
+.instagram img:hover {
+    width: 90px;
+}
+
+/*ABOUT ME*/
+
+#about-me .about-content {
+    height: auto;
+    background-color: rgba(1, 49, 145, 0.1);
+}
+
+#about-me h2 {
+    font-size: 40px;
+}
+
+#about-me p {
+    font-size: 22px;
+    width: 150%;
+}
+
+.paragraph p {
+    text-align: left;
+}
+
+/*SKILLS*/
+
+#skills .row {
+    height: 462px;
+}
+
+#skills h2 {
+    font-size: 40px;
+}
+
+
+#skills h4 {
+    font-size: 22px;
+}
+
+/*PTOJECTS*/
+
+#projects .projects-background {
+    height: auto;
+    background-color: rgba(1, 49, 145, 0.1);
+}
+
+#projects h2 {
+    font-size: 40px;
+
+}
+
+/*contact me*/
+
+#contact-me .contact-height {
+    height: 462px;
+}
+
+#contact-me h2 {
+    font-size: 40px;
+
+}
+
+#contact-me input {
+    width: 365px;
+    height: 31px;
+    border: 2px solid #0F0569;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+#contact-me textarea {
+    width: 365px;
+    height: 86px;
+    border: 2px solid #0F0569;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+#contact-me button {
+    width: 365px;
+    height: 31px;
+    background: #0F0569;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#contact-me label {
+
+    font-size: 14px;
+    text-justify: left;
+}
+
+#contact-me input:hover {
+
+    border: 2px solid #07d5f0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+#contact-me textarea:hover {
+
+    border: 2px solid #07d5f0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+#contact-me button:hover {
+
+    background-color: #07d5f0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+/*FOOTER*/
+
+#main-footer {
+    background-color: #010033;
+    color: #ffffff;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1200px) {
+
+    .rafael-profile {
+        position: absolute;
+        right: 3000px;
+    }
+
+
+    .head-photo-name h1 {
+        font-size: 19px;
+        margin: auto;
+        padding-top: 10px;
+    }
+
+    #navbar a {
+        padding: auto;
+        font-size: 15px;
+    }
+
+    /*SOCIAL*/
+
+    #showcase h2 {
+        font-size: 48px;
+    }
+
+    #showcase p,
+    h3 {
+        font-size: 18px;
+    }
+
+    .showcase-img {
+        width: 80%;
+    }
+
+    /*SOCIAL*/
+
+    .social img {
+        width: 50px;
+    }
+
+    .instagram img {
+        width: 55px;
+    }
+
+    .social img:hover {
+        width: 55px;
+    }
+
+    .instagram img:hover {
+        width: 60px;
+    }
+
+    /*ABOUT*/
+    #about-me h2 {
+        font-size: 24px;
+    }
+
+    #about-me p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    #about-me img {
+        font-size: 18px;
+        width: 150px;
+    }
+
+    /*SKILLS*/
+
+    #skills .row {
+        height: 100%;
+    }
+
+    #skills h2 {
+        font-size: 24px;
+    }
+
+
+    #skills h4 {
+        font-size: 16px;
+    }
+
+    #skills img {
+        width: 100px;
+    }
+
+    /*CONTACT-ME*/
+
+    #projects h2 {
+        font-size: 24px;
+
+    }
+
+
+    /*CONTACT-ME*/
+
+    #contact-me .row {
+        height: 462px;
+    }
+
+    #contact-me h2 {
+        font-size: 24px;
+
+    }
+
+    #contact-me input {
+        width: 100%;
+        height: 31px;
+
+    }
+
+    #contact-me textarea,
+    #contact-me button,
+    #contact-me button {
+        width: 100%;
+        height: 31px;
+    }
+
+    #contact-me img {
+        position: absolute;
+        right: 3000px;
+    }
+
+
+
+
+}
