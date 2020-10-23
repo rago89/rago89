@@ -33,6 +33,7 @@ header {
 
 .rafael-profile {
     padding-top: 10px;
+    width: 80px;
 }
 
 #navbar li a {
@@ -96,6 +97,10 @@ header {
 #about-me p {
     font-size: 22px;
     width: 150%;
+}
+
+#about-me img {
+    width: 300px;
 }
 
 .paragraph p {
@@ -203,6 +208,10 @@ header {
     background-color: #07d5f0;
     box-sizing: border-box;
     border-radius: 10px;
+}
+
+#contact-me img {
+    width: 100%;
 }
 
 /*FOOTER*/
