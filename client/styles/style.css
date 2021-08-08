@@ -1,358 +1,337 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5em;
-    font-size: 17px;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    margin: auto;
-    width: 90%;
-}
-
-header {
-    height: 100px;
-    background-color: #010033;
-}
-
-
-/*NAV BAR*/
-#navbar li {
-    display: inline;
-    list-style: none;
-    padding-right: 15px;
-}
-
-.head-photo-name h1 {
-    display: inline;
-    padding-left: 15px;
-    margin-bottom: 10px;
-    color: #ffffff;
-}
-
-.rafael-profile {
-    padding-top: 10px;
-    width: 80px;
-}
-
-#navbar li a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-#navbar a:hover {
-    color: #187EB5;
-}
-
-/*SHOWCASE*/
-
-#showcase .row {
-    height: 824px;
-}
-
-.social a {
-    padding-left: 15px;
-}
-
-#showcase h2 {
-    font-size: 80px;
-}
-
-#showcase p {
-    font-size: 35px;
-}
-
-.social h3 {
-    font-size: 25px;
-}
-
-.social img {
-    width: 80px;
-}
-
-.instagram img {
-    width: 85px;
-}
-
-.social img:hover {
-    width: 85px;
-}
-
-.instagram img:hover {
-    width: 90px;
-}
-
 /*ABOUT ME*/
 
-#about-me .about-content {
-    height: auto;
-    background-color: rgba(1, 49, 145, 0.1);
+#about-me {
+  background-color: rgba(1, 49, 145, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 30% 60%;
+  grid-template-areas: " header header " "photo description";
+  height: auto;
+  width: auto;
 }
 
 #about-me h2 {
-    font-size: 40px;
+  font-size: 40px;
+  grid-area: header;
+  justify-self: center;
+  height: 40px;
 }
 
-#about-me p {
-    font-size: 22px;
-    width: 150%;
+.paragraph {
+  font-size: 22px;
+  width: 95%;
+  grid-area: description;
+  padding-bottom: 5%;
 }
 
 #about-me img {
-    width: 300px;
+  width: 40%;
+  grid-area: photo;
+  justify-self: center;
 }
 
 .paragraph p {
-    text-align: left;
+  text-align: left;
 }
 
 /*SKILLS*/
 
-#skills .row {
-    height: 462px;
+#skills {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: 1fr;
+  grid-template-areas: "header header header header header header";
+  justify-content: center;
+  justify-items: center;
+  grid-gap: 1%;
+  margin-bottom: 5%;
+  width: auto;
 }
 
 #skills h2 {
-    font-size: 40px;
+  grid-area: header;
+  justify-self: center;
+  font-size: 40px;
 }
-
 
 #skills h4 {
-    font-size: 22px;
+  font-size: 1em;
+  justify-items: center;
+  text-align: center;
+  margin: 0;
 }
 
-/*PTOJECTS*/
+.logo img {
+  padding-top: 10%;
+  height: 70%;
+}
 
-#projects .projects-background {
-    height: 462px;
-    background-color: rgba(1, 49, 145, 0.1);
+.logo {
+  height: 100%;
+  background-color: rgba(1, 49, 145, 0.1);
+  border-radius: 10%;
+  box-shadow: 2px 2px 2px 2px rgba(2, 22, 63, 0.3);
+}
+
+/*PROJECTS*/
+
+#projects {
+  background-color: (1, 49, 145, 0.1);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1 fr;
+  grid-template-areas: " header header header header header";
+  justify-content: center;
+  justify-items: center;
+  grid-column-gap: 2%;
+  grid-row-gap: 1%;
+  margin-bottom: 5%;
+  margin: 0% 10%;
 }
 
 #projects h2 {
-    font-size: 40px;
-
+  font-size: 40px;
+  grid-area: header;
+  justify-self: center;
 }
 
-#projects img {
-    width: 25%;
-    box-shadow: -1px 2px 10px 10px rgba(0, 0, 0, 0.25);
-
+#projects .project-img {
+  width: 90%;
+  justify-self: center;
 }
 
-#projects img:hover {
-    width: 26%;
+#projects div {
+  width: 100%;
+  height: 80%;
+  margin-bottom: 25%;
+  background-color: rgba(1, 49, 145, 0.1);
+  border-radius: 10%;
+  box-shadow: 2px 2px 2px 2px rgba(2, 22, 63, 0.3);
+  text-align: center;
+  padding-top: 15%;
+}
 
+#projects div p {
+  padding: 0% 5% 0% 5%;
+}
 
+#projects div .mini-img-project {
+  width: 30px;
 }
 
 /*contact me*/
 
-#contact-me .contact-height {
-    height: 462px;
+#contact-me {
+  background-color: rgba(1, 49, 145, 0.1);
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  grid-template-areas: " header header " "form img";
+  height: auto;
+  width: auto;
+  padding-bottom: 2%;
 }
 
 #contact-me h2 {
-    font-size: 40px;
+  font-size: 40px;
+  grid-area: header;
+  justify-self: center;
+}
 
+#contact-me form {
+  grid-area: form;
 }
 
 #contact-me input {
-    width: 365px;
-    height: 31px;
-    border: 2px solid #0F0569;
-    box-sizing: border-box;
-    border-radius: 10px;
+  width: 365px;
+  height: 31px;
+  border: 2px solid #0f0569;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 #contact-me textarea {
-    width: 365px;
-    height: 86px;
-    border: 2px solid #0F0569;
-    box-sizing: border-box;
-    border-radius: 10px;
+  width: 365px;
+  height: 86px;
+  border: 2px solid #0f0569;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 #contact-me button {
-    width: 365px;
-    height: 31px;
-    background: #0F0569;
-    border: 1px solid #000000;
-    box-sizing: border-box;
-    border-radius: 10px;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 18px;
+  width: 365px;
+  height: 31px;
+  background: #0f0569;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 #contact-me label {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 #contact-me input:hover {
-
-    border: 2px solid #07d5f0;
-    box-sizing: border-box;
-    border-radius: 10px;
+  border: 2px solid #07d5f0;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 #contact-me textarea:hover {
-
-    border: 2px solid #07d5f0;
-    box-sizing: border-box;
-    border-radius: 10px;
+  border: 2px solid #07d5f0;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 #contact-me button:hover {
-
-    background-color: #07d5f0;
-    box-sizing: border-box;
-    border-radius: 10px;
+  background-color: #07d5f0;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 #contact-me img {
-    width: 100%;
+  width: 70%;
+  grid-area: img;
+  justify-self: center;
 }
 
 /*FOOTER*/
 
 #main-footer {
-    background-color: #010033;
-    color: #ffffff;
+  background-color: #010033;
+  color: #ffffff;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
+  #projects {
+    background-color: (1, 49, 145, 0.1);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: " header header header header";
+    justify-content: center;
+    justify-items: center;
+    grid-column-gap: 2%;
+    grid-row-gap: 1%;
+    margin-bottom: 5%;
+    margin: 0% 10%;
+  }
+  #contact-me {
+    background-color: rgba(1, 49, 145, 0.1);
+    display: grid;
+    grid-template-columns: 1.5fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    grid-template-areas: " header " "form ";
+    height: auto;
+    width: auto;
+    padding-bottom: 2%;
+  }
 
-    .rafael-profile {
-        position: absolute;
-        right: 3000px;
-    }
+  #contact-me img {
+    display: none;
+  }
+}
 
+@media screen and (max-width: 768px) {
+  /* about me*/
+  #about-me {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 22% 30%;
+    grid-template-areas: "title" "description";
+    height: 100%;
+  }
 
-    .head-photo-name h1 {
-        font-size: 19px;
-        margin: auto;
-        padding-top: 10px;
-    }
+  #about-me img {
+    display: none;
+  }
 
-    #navbar a {
-        font-size: 15px;
-    }
+  #about-me h2 {
+    grid-area: title;
+  }
 
-    /*SOCIAL*/
+  .paragraph {
+    text-align: center;
+    grid-area: description;
+    justify-self: center;
+  }
 
-    #showcase h2 {
-        font-size: 48px;
-    }
+  /*SKILLS*/
 
-    #showcase p,
-    h3 {
-        font-size: 18px;
-    }
+  #skills h2 {
+    font-size: 24px;
+  }
 
-    .showcase-img {
-        width: 80%;
-    }
+  #skills h4 {
+    font-size: 16px;
+  }
 
-    /*SOCIAL*/
+  #skills img {
+    width: 100px;
+  }
 
-    .social img {
-        width: 50px;
-    }
+  /*projects*/
+  #projects {
+    background-color: (1, 49, 145, 0.1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "header header header";
+    justify-content: center;
+    justify-items: center;
+    grid-column-gap: 2%;
+    grid-row-gap: 1%;
+    margin-bottom: 5%;
+    margin: 0% 10%;
+  }
+  #projects div {
+    height: 80%;
+  }
+  #projects div > h3 {
+    font-size: 1em;
+  }
 
-    .instagram img {
-        width: 55px;
-    }
+  #projects div > p {
+    font-size: 0.8em;
+  }
 
-    .social img:hover {
-        width: 55px;
-    }
+  #contact-me img {
+    display: none;
+  }
+}
 
-    .instagram img:hover {
-        width: 60px;
-    }
+@media screen and (max-width: 400px) {
+  #projects {
+    background-color: (1, 49, 145, 0.1);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "header header";
+    justify-content: center;
+    justify-items: center;
+    height: fit-content;
+    grid-row-gap: 1%;
+  }
 
-    /*ABOUT*/
-    #about-me h2 {
-        font-size: 24px;
-    }
+  #projects div {
+    height: 80%;
+    padding-bottom: 10%;
+  }
+  #projects div > h3 {
+    font-size: 1em;
+  }
 
-    #about-me p {
-        font-size: 14px;
-        width: 100%;
-    }
-
-    #about-me img {
-        font-size: 18px;
-        width: 150px;
-    }
-
-    /*SKILLS*/
-
-    #skills .row {
-        height: 100%;
-    }
-
-    #skills h2 {
-        font-size: 24px;
-    }
-
-
-    #skills h4 {
-        font-size: 16px;
-    }
-
-    #skills img {
-        width: 100px;
-    }
-
-    /*CONTACT-ME*/
-
-    #projects h2 {
-        font-size: 24px;
-
-    }
-
-
-    /*CONTACT-ME*/
-
-    #contact-me .row {
-        height: 462px;
-    }
-
-    #contact-me h2 {
-        font-size: 24px;
-
-    }
-
-    #contact-me input {
-        width: 100%;
-        height: 31px;
-
-    }
-
-    #contact-me textarea,
-    #contact-me button,
-    #contact-me button {
-        width: 100%;
-        height: 31px;
-    }
-
-    #contact-me img {
-        position: absolute;
-        right: 3000px;
-    }
-
-    #projects img {
-        width: 99%;
-
-    }
-
-    #projects img:hover {
-        width: 100%;
-
-    }
-
-
+  #projects div > p {
+    font-size: 0.8em;
+  }
 }

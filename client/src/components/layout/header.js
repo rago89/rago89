@@ -8,43 +8,37 @@
 export const header = (obj) => {
   const headerEl = document.createElement("header");
   headerEl.id = "main-header";
-  headerEl.classList.add(
-    "row",
-    "center-xs",
-    "start-sm",
-    "start-md",
-    "start-lg",
-    "middle-xs",
-    "middle-sm",
-    "middle-md",
-    "middle-lg",
-    "top-xs",
-    "top-md",
-    "top-sm",
-    "top-lg"
-  );
+  headerEl.className = "headerClass";
+  const imageHeaderContainer = document.createElement("div");
+  imageHeaderContainer.className = "imageHeaderContainer";
+
   const img = document.createElement("img");
-  img.src = "../../../public/images/photo-profil-def.png";
+  img.src = "../../../../public/images/photo-profil-def.png";
   img.alt = "Rafael profile photo";
   img.className = "rafael-profile";
-  headerEl.appendChild(img);
+  imageHeaderContainer.appendChild(img);
+
+  const titleH1 = document.createElement("h1");
+  titleH1.innerHTML = "Rafael Garcia";
+  imageHeaderContainer.appendChild(titleH1);
+
   const navbar = document.createElement("nav");
   navbar.id = "navbar";
-  navbar.classList.add(
-    "col-xs-12",
-    "col-sm-12",
-    "col-md-8",
-    "col-lg-8",
-    "end-lg",
-    "end-md"
-  );
+
+  const ulEl = document.createElement("ul");
+
   for (const argument of obj) {
+    const liEl = document.createElement("li");
     const anchor = document.createElement("a");
     anchor.innerHTML = argument.title;
     anchor.href = argument.link;
-    navbar.appendChild(anchor);
+    liEl.appendChild(anchor);
+    ulEl.appendChild(liEl);
   }
 
+  navbar.appendChild(ulEl);
+  headerEl.appendChild(imageHeaderContainer);
   headerEl.appendChild(navbar);
+
   return headerEl;
 };

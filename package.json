@@ -1,5 +1,5 @@
 {
-  "name": "javascript-quiz",
+  "name": "rago89",
   "version": "0.0.0",
   "scripts": {
     "tree": "depcruise --prefix ../ --include-only \"^client/src\" --exclude sandbox.js --output-type dot client | graphviz -Tsvg -odocs/dependency-graph.svg",
@@ -16,14 +16,14 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hackyourfuturebelgium/word-list.git"
+    "url": "git+https://github.com/rago89/rago89.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hackyourfuturebelgium/word-list/issues"
+    "url": "https://github.com/rago89/rago89/issues"
   },
-  "homepage": "https://github.com/hackyourfuturebelgium/word-list",
+  "homepage": "https://github.com/rago89/rago89",
   "devDependencies": {
     "dependency-cruiser": "^10.0.1",
     "eslint": "^7.27.0",

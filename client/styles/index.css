@@ -1,4 +1,4 @@
-@import url('./body.css');
-@import url('./bottom.css');
-@import url('./flexboxgrid.css');
 @import url("./style.css");
+@import url("./header.css");
+@import url("./body.css");
+@import url("./showcase.css");

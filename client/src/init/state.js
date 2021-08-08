@@ -9,8 +9,8 @@ import { isPlainObject } from "../../lib/is-plain-object.js";
 import { isJSONable } from "../../lib/is-jsonable.js";
 import { validate } from "../../lib/validate.js";
 
-import { data } from "../../data/quiz.js";
-import { schema } from "../../data/quiz.schema.js";
+import { data } from "../../data/data.js";
+import { schema } from "../../data/data.schema.js";
 
 if (!isPlainObject(data)) {
   throw new TypeError("data is not an object");
