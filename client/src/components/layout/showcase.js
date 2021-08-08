@@ -32,7 +32,7 @@ export const showcase = () => {
   showcaseContent.appendChild(socialDiv);
 
   const showcaseImg = document.createElement("img");
-  showcaseImg.src = "../../../../public/images/technology-png-transparent.png";
+  showcaseImg.src = "./client/public/images/technology-png-transparent.png";
   showcaseImg.alt = "Technology image with tablets, notebooks and mobiles";
 
   showcase.appendChild(showcaseContent);

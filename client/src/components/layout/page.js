@@ -1,5 +1,6 @@
 import { header } from "./header.js";
 import { footer } from "./footer.js";
+import { data } from "../../../data/data.js";
 
 /**
  * The page layout component.
@@ -9,10 +10,10 @@ import { footer } from "./footer.js";
  * @returns {HTMLDivElement} A rendered page element.
  * @throws {TypeError} When the bodyComponent is not a function or DOM element.
  */
-export const page = (bodyComponent, routes) => {
+export const page = (bodyComponent) => {
   const container = document.createElement("div");
 
-  container.appendChild(header(routes));
+  container.appendChild(header(data.navInfo));
   if (typeof bodyComponent === "function") {
     container.appendChild(bodyComponent());
   } else if (bodyComponent instanceof Element) {

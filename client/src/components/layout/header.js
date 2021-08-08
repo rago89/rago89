@@ -13,7 +13,7 @@ export const header = (obj) => {
   imageHeaderContainer.className = "imageHeaderContainer";
 
   const img = document.createElement("img");
-  img.src = "../../../../public/images/photo-profil-def.png";
+  img.src = "./client/public/images/photo-profil-def.png";
   img.alt = "Rafael profile photo";
   img.className = "rafael-profile";
   imageHeaderContainer.appendChild(img);
