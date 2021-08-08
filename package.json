@@ -43,5 +43,8 @@
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
     "vite": "^2.3.7"
+  },
+  "dependencies": {
+    "navigo": "^8.11.1"
   }
 }
