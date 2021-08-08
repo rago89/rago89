@@ -2,12 +2,12 @@ import {
   undefinedOrTrue,
   pushStateAvailable,
   windowAvailable,
-} from '../utils.js';
+} from "../utils.js";
 var isWindowAvailable = windowAvailable();
 var isPushStateAvailable = pushStateAvailable();
 export default function updateBrowserURL(context, done) {
-  if (undefinedOrTrue(context.navigateOptions, 'updateBrowserURL')) {
-    var value = ('/' + context.to).replace(/\/\//g, '/'); // making sure that we don't have two slashes
+  if (undefinedOrTrue(context.navigateOptions, "updateBrowserURL")) {
+    var value = ("/" + context.to).replace(/\/\//g, "/"); // making sure that we don't have two slashes
 
     var isItUsingHash =
       isWindowAvailable &&
@@ -15,10 +15,10 @@ export default function updateBrowserURL(context, done) {
       context.resolveOptions.hash === true;
 
     if (isPushStateAvailable) {
-      history[context.navigateOptions.historyAPIMethod || 'pushState'](
+      history[context.navigateOptions.historyAPIMethod || "pushState"](
         context.navigateOptions.stateObj || {},
-        context.navigateOptions.title || '',
-        isItUsingHash ? '#' + value : value
+        context.navigateOptions.title || "",
+        isItUsingHash ? "#" + value : value
       ); // This is to solve a nasty bug where the page doesn't scroll to the anchor.
       // We set a microtask to update the hash only.
 
@@ -27,7 +27,7 @@ export default function updateBrowserURL(context, done) {
         setTimeout(function () {
           if (!isItUsingHash) {
             var tmp = location.hash;
-            location.hash = '';
+            location.hash = "";
             location.hash = tmp;
           }
 

@@ -1,3 +1,3 @@
 export const config = {
-  repoName: 'javascript-quiz',
+  repoName: "rago89",
 };
