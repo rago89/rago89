@@ -14,20 +14,18 @@
 
 <!-- BEGIN TOC -->
 
+- api-calls
 - components
   - layout
     - [footer.js](#clientsrccomponentslayoutfooterjs)
-    - [navbar.js](#clientsrccomponentslayoutnavbarjs)
+    - [header.js](#clientsrccomponentslayoutheaderjs)
     - [page.js](#clientsrccomponentslayoutpagejs)
+    - [showcase.js](#clientsrccomponentslayoutshowcasejs)
   - pages
     - home
       - [index.js](#clientsrccomponentspageshomeindexjs)
-    - questions
-      - [index.js](#clientsrccomponentspagesquestionsindexjs)
-    - quiz
-      - [index.js](#clientsrccomponentspagesquizindexjs)
   - shared
-    - [input-greeting.js](#clientsrccomponentssharedinput-greetingjs)
+    - [socialContact.js](#clientsrccomponentssharedsocialContactjs)
 - handlers
   - [change-greeting.js](#clientsrchandlerschange-greetingjs)
 - init
@@ -43,6 +41,10 @@
 <!-- END TOC -->
 
 <!-- BEGIN DOCS -->
+
+# /api-calls
+
+---
 
 # /components
 
@@ -60,19 +62,19 @@ The shared footer.
 
 </details>
 
-<details><summary><a href="../../client/src/components/layout/navbar.js" id="clientsrccomponentslayoutnavbarjs">../client/src/components/layout/navbar.js</a></summary>
+<details><summary><a href="../../client/src/components/layout/header.js" id="clientsrccomponentslayoutheaderjs">../client/src/components/layout/header.js</a></summary>
 
-<a name="navbar"></a>
+<a name="header"></a>
 
-## navbar ⇒ <code>HTMLDivElement</code>
+## header ⇒ <code>HTMLDivElement</code>
 
 The shared navbar.
 
 **Returns**: <code>HTMLDivElement</code> - A rendered nav bar element.
 
-| Param  | Type                | Description                          |
-| ------ | ------------------- | ------------------------------------ |
-| routes | <code>object</code> | A routes object, see /src/routes.js. |
+| Param    | Type               | Description                                                                                 |
+| -------- | ------------------ | ------------------------------------------------------------------------------------------- |
+| navLinks | <code>array</code> | An array of objects, each object contains title and link for the anchor see /src/routes.js. |
 
 </details>
 
@@ -96,6 +98,10 @@ The page layout component.
 
 </details>
 
+<details><summary><a href="../../client/src/components/layout/showcase.js" id="clientsrccomponentslayoutshowcasejs">../client/src/components/layout/showcase.js</a></summary>
+
+</details>
+
 ---
 
 ## /pages
@@ -116,43 +122,11 @@ The home page.
 
 ---
 
-### /questions
-
-<details><summary><a href="../../client/src/components/pages/questions/index.js" id="clientsrccomponentspagesquestionsindexjs">../client/src/components/pages/questions/index.js</a></summary>
-
-<a name="questions"></a>
-
-## questions ⇒ <code>HTMLDivElement</code>
-
-The questions page.
-
-**Returns**: <code>HTMLDivElement</code> - A rendered questions page.
-
-</details>
-
----
-
-### /quiz
-
-<details><summary><a href="../../client/src/components/pages/quiz/index.js" id="clientsrccomponentspagesquizindexjs">../client/src/components/pages/quiz/index.js</a></summary>
-
-<a name="quiz"></a>
-
-## quiz ⇒ <code>HTMLDivElement</code>
-
-The quiz page.
-
-**Returns**: <code>HTMLDivElement</code> - A rendered quiz page.
-
-</details>
-
----
-
 ---
 
 ## /shared
 
-<details><summary><a href="../../client/src/components/shared/input-greeting.js" id="clientsrccomponentssharedinput-greetingjs">../client/src/components/shared/input-greeting.js</a></summary>
+<details><summary><a href="../../client/src/components/shared/socialContact.js" id="clientsrccomponentssharedsocialContactjs">../client/src/components/shared/socialContact.js</a></summary>
 
 </details>
 
