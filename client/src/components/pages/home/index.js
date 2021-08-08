@@ -7,8 +7,9 @@ import { showcase } from "../../layout/showcase.js";
  */
 
 export const home = () => {
-  const body = document.createElement("body");
-  body.appendChild(showcase());
+  const bodySection = document.createElement("div");
+  bodySection.className = "body-section";
+  bodySection.appendChild(showcase());
 
-  return body;
+  return bodySection;
 };

@@ -12,6 +12,7 @@ import { data } from "../../../data/data.js";
  */
 export const page = (bodyComponent) => {
   const container = document.createElement("div");
+  container.id = "root";
 
   container.appendChild(header(data.navInfo));
   if (typeof bodyComponent === "function") {
