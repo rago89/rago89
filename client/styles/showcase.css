@@ -59,6 +59,11 @@
     padding-bottom: 20px;
   }
 
+  .showcase-content {
+    padding-left: 0%;
+    height: auto;
+  }
+
   .showcase-content h2 {
     margin-bottom: 10px;
   }
