@@ -2,13 +2,13 @@ export const schema = {
   title: "portfolio",
   description: "data required to render my portfolio",
   type: "object",
-  required: ["navInfo", "socialContact"],
+  required: ["navInfo", "socialContact", "skills"],
   properties: {
     navInfo: {
       type: "array",
       description: "the array of objects with tile and link for navbar",
       items: {
-        type: "object ",
+        type: "object",
         description: "with tile and link for navbar",
         required: ["title", "link"],
         properties: {
@@ -26,7 +26,7 @@ export const schema = {
     socialContact: {
       type: "array",
       items: {
-        type: "object ",
+        type: "object",
         description: "with tile and link for navbar",
         required: ["class", "href", "src", "alt"],
         properties: {
@@ -39,6 +39,32 @@ export const schema = {
             description: "link of the web",
           },
           src: {
+            type: "string",
+            description: "path of the img",
+          },
+          alt: {
+            type: "string",
+            description: "description of the img",
+          },
+        },
+      },
+    },
+    skills: {
+      type: "array",
+      items: {
+        type: "object",
+        description: "array of objects to load the skill",
+        required: ["class", "type", "path", "alt"],
+        properties: {
+          class: {
+            type: "string",
+            description: "the class for styling",
+          },
+          type: {
+            type: "string",
+            description: "link of the web",
+          },
+          path: {
             type: "string",
             description: "path of the img",
           },

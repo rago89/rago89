@@ -1,5 +1,5 @@
 import { socialContact } from "../shared/socialContact.js";
-import { data } from "../../../data/data.js";
+import { state } from "../../init/state.js";
 
 export const showcase = () => {
   const showcase = document.createElement("section");
@@ -25,7 +25,7 @@ export const showcase = () => {
   const breakLine = document.createElement("br");
   socialDiv.appendChild(breakLine);
 
-  data.socialContact.forEach((obj) => {
+  state.socialContact.forEach((obj) => {
     socialDiv.appendChild(socialContact(obj));
   });
 

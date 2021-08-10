@@ -1,5 +1,6 @@
 import { showcase } from "../../layout/showcase.js";
 import { aboutMe } from "../../layout/about-me.js";
+import { skills } from "../../layout/skills.js";
 
 /**
  * The home page.
@@ -12,6 +13,7 @@ export const home = () => {
   bodySection.className = "body-section";
   bodySection.appendChild(showcase());
   bodySection.appendChild(aboutMe());
+  bodySection.appendChild(skills());
 
   return bodySection;
 };

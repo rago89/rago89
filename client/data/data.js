@@ -43,4 +43,42 @@ export const data = {
       alt: "instagram",
     },
   ],
+  skills: [
+    {
+      class: "logo",
+      type: "html",
+      path: "client/public/images/html-logo.svg",
+      alt: "HTML logo",
+    },
+    {
+      class: "logo",
+      type: "css",
+      path: "./client/public/images/css-logo.svg",
+      alt: "CSS logo",
+    },
+    {
+      class: "logo",
+      type: "javascript",
+      path: "./client/public/images/javascript-logo.svg",
+      alt: "javaScript logo",
+    },
+    {
+      class: "logo",
+      type: "git",
+      path: "./client/public/images/git.png",
+      alt: "Git logo",
+    },
+    {
+      class: "logo-Git-Hub",
+      type: "github",
+      path: "./client/public/images/octocat.png",
+      alt: "GitHub logo",
+    },
+    {
+      class: "logo",
+      type: "node",
+      path: "./client/public/images/node.png",
+      alt: "Node logo",
+    },
+  ],
 };
