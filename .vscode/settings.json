@@ -1,9 +1,4 @@
 {
-    "cSpell.words": [
-        "Gmail",
-        "jsonable",
-        "octocat",
-        "profil"
-    ],
-    "liveServer.settings.port": 5501
+  "cSpell.words": ["Gmail", "jsonable", "octocat", "profil", "typicode"],
+  "liveServer.settings.port": 5501
 }

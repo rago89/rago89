@@ -1,0 +1,35 @@
+.button-projects-toggle {
+  grid-area: xl;
+  justify-self: right;
+  padding: 15px 25px;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  border-color: #3344dd;
+  border-style: solid;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: inline-block;
+  margin: 20px;
+}
+
+.study-trip-toggle {
+  grid-area: f;
+  justify-self: left;
+  padding: 15px 25px;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  border-color: #3344dd;
+  border-style: solid;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: inline-block;
+  margin: 20px;
+}

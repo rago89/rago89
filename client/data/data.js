@@ -81,4 +81,8 @@ export const data = {
       alt: "Node logo",
     },
   ],
+  projects: {
+    studyProjects: [],
+    studyRepo: [],
+  },
 };

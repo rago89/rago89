@@ -2,7 +2,7 @@ export const schema = {
   title: "portfolio",
   description: "data required to render my portfolio",
   type: "object",
-  required: ["navInfo", "socialContact", "skills"],
+  required: ["navInfo", "socialContact", "skills", "projects"],
   properties: {
     navInfo: {
       type: "array",
@@ -71,6 +71,84 @@ export const schema = {
           alt: {
             type: "string",
             description: "description of the img",
+          },
+        },
+      },
+    },
+    projects: {
+      type: "object",
+      required: ["studyProjects", "studyRepo"],
+      properties: {
+        studyProjects: {
+          type: "array",
+          items: {
+            type: "object",
+            description: "array of project objects",
+            required: [
+              "name",
+              "description",
+              "html_url",
+              "homepage",
+              "has_pages",
+            ],
+            properties: {
+              name: {
+                type: "string",
+                description: "Tile of the project",
+              },
+              description: {
+                type: "string",
+                description: "project's description",
+              },
+              html_url: {
+                type: "string",
+                description: "link from github",
+              },
+              homepage: {
+                type: "string",
+                description: "link to deploy page",
+              },
+              has_pages: {
+                type: "string",
+                description: "link to deploy page",
+              },
+            },
+          },
+        },
+        studyRepo: {
+          type: "array",
+          items: {
+            type: "object",
+            description: "array of project objects",
+            required: [
+              "name",
+              "description",
+              "html_url",
+              "homepage",
+              "has_pages",
+            ],
+            properties: {
+              name: {
+                type: "string",
+                description: "Tile of the project",
+              },
+              description: {
+                type: "string",
+                description: "project's description",
+              },
+              html_url: {
+                type: "string",
+                description: "link from github",
+              },
+              homepage: {
+                type: "string",
+                description: "link to deploy page",
+              },
+              has_pages: {
+                type: "string",
+                description: "link to deploy page",
+              },
+            },
           },
         },
       },
