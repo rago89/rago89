@@ -8,18 +8,21 @@ export const projects = (projectsApi) => {
   projectsTitle.innerHTML = "Projects and Study Journey";
   projectSection.appendChild(projectsTitle);
 
+  const btnsContainer = document.createElement("div");
+  btnsContainer.id = "btns-container";
   const buttonProjects = document.createElement("button");
   buttonProjects.innerHTML = "Projects";
   buttonProjects.id = "projectsBtn";
   buttonProjects.className = "button-projects";
-  projectSection.appendChild(buttonProjects);
+  btnsContainer.appendChild(buttonProjects);
 
   const studyTrip = document.createElement("button");
   studyTrip.innerHTML = "My study journey";
   studyTrip.id = "StudyJourneyBtn";
   studyTrip.className = "study-trip";
-  projectSection.appendChild(studyTrip);
+  btnsContainer.appendChild(studyTrip);
 
+  projectSection.appendChild(btnsContainer);
   // add projects
   projectsApi.forEach((project) => {
     projectSection.appendChild(projectComponent(project));

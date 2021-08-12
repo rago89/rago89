@@ -53,7 +53,6 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-  /*Header*/
   .imageHeaderContainer {
     display: none;
   }
