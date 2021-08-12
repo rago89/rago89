@@ -5,7 +5,7 @@
   grid-template-areas: "h h h h h h" "j j j j j j";
   grid-row-gap: 1em;
   width: auto;
-  grid-column-gap: 2%;
+  grid-column-gap: 1%;
   grid-row-gap: 5%;
   margin-bottom: 5%;
   margin: 0% 1%;
@@ -19,7 +19,7 @@
 }
 
 .project {
-  width: auto;
+  max-width: 260px;
   background-color: rgba(1, 49, 145, 0.1);
   border-radius: 10%;
   box-shadow: 2px 2px 2px 2px rgba(2, 22, 63, 0.3);
@@ -32,12 +32,12 @@
 }
 
 .project > h3 {
-  font-size: 1em;
+  font-size: 1.4em;
   justify-content: center;
 }
 
 .project > p {
-  font-size: 0.8em;
+  font-size: 1.2em;
   justify-content: center;
 }
 
