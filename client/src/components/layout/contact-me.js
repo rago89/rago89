@@ -16,16 +16,19 @@ export const contactMe = () => {
 
   const form = document.createElement("form");
   form.className = "contact-form";
+  form.action = "mailto:rago@gmail.com";
+  form.method = "post";
+  form.enctype = "text/plain";
 
   form.appendChild(inputForm("name", "Name"));
   form.appendChild(inputForm("email", "Email"));
   form.appendChild(inputForm("company", "Company"));
   form.appendChild(inputForm("message", "Message"));
 
-  const submitBtn = document.createElement("button");
+  const submitBtn = document.createElement("input");
   submitBtn.type = "submit";
-  submitBtn.name = "button";
-  submitBtn.innerHTML = "Submit";
+  submitBtn.value = "send";
+
   form.appendChild(submitBtn);
 
   const img = document.createElement("img");
