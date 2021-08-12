@@ -1,12 +1,9 @@
-import { state } from "../../../init/state.js";
 import { typicodeResource } from "../../../api-calls/repsGithub.js";
-import { updateProject } from "../../../logic/processData.js";
 import { showcase } from "../../layout/showcase.js";
 import { aboutMe } from "../../layout/about-me.js";
 import { skills } from "../../layout/skills.js";
-import { projects } from "../../layout/projects.js";
-import { myStudyJourney } from "../../../handlers/myStudyJourney.js";
-import { projectsRepo } from "../../../handlers/projectsHdl.js";
+import { contactMe } from "../../layout/contact-me.js";
+import { renderProject } from "../../../async/renderProject.js";
 
 /**
  * The home page.
@@ -22,21 +19,9 @@ export const home = () => {
   bodySection.appendChild(skills());
 
   const dataFromApi = typicodeResource("users", "rago89", "repos");
-  dataFromApi.then((response) => {
-    updateProject(response);
-    bodySection.appendChild(projects(state.projects.studyProjects));
-    // query project buttons
-    const projectsBtn = document.getElementById("projectsBtn");
-    const studyJourneyBtn = document.getElementById("StudyJourneyBtn");
-    // update study journey button
-    if (projectsBtn.className === "button-projects") {
-      studyJourneyBtn.classList.remove("study-trip");
-      studyJourneyBtn.classList.add("study-trip-toggle");
-    }
-    // add event listener to buttons
-    studyJourneyBtn.addEventListener("click", myStudyJourney);
-    projectsBtn.addEventListener("click", projectsRepo);
-  });
+  dataFromApi
+    .then((response) => renderProject(response))
+    .then((body) => body.appendChild(contactMe()));
 
   return bodySection;
 };

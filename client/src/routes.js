@@ -38,7 +38,7 @@ const routeHandler =
     const namedRoutes = routes.filter((route) => `name` in route);
     const cleanData = { ...data };
     cleanData.id = !data || !("id" in data) ? -1 : data.id;
-    const root = document.getElementById("myScript");
+    const root = document.getElementById("root");
     root.innerHTML = "";
     root.before(page(pageBody(parse(data), parse(params)), namedRoutes));
   };

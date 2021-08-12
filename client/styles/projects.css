@@ -5,10 +5,13 @@
   grid-template-areas: "h h h h h h" "j j j j j j";
   grid-row-gap: 1em;
   width: auto;
+  height: fit-content;
+  grid-auto-rows: auto;
   grid-column-gap: 1%;
   grid-row-gap: 5%;
   margin-bottom: 5%;
-  margin: 0% 1%;
+  margin: 0% 1% 1% 1%;
+  overflow: auto;
 }
 
 #projects h2 {

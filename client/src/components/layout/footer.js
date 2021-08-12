@@ -4,9 +4,11 @@
  * @returns {HTMLDivElement} A rendered footer element.
  */
 export const footer = () => {
-  const container = document.createElement("div");
-  container.className = "bottom";
-  container.innerHTML = "footer";
+  const footerEl = document.createElement("footer");
+  footerEl.id = "main-footer";
+  const paragraph = document.createElement("p");
+  paragraph.innerHTML = "Copyright &copy; 2020 | Rafael Garcia";
+  footerEl.appendChild(paragraph);
 
-  return container;
+  return footerEl;
 };
