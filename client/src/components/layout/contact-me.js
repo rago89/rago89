@@ -1,8 +1,11 @@
-const inputForm = (id, text) => {
+const inputForm = (type, id, text, boolean = false) => {
   const div = document.createElement("div");
   const input = document.createElement("input");
+  input.placeholder = text;
   input.id = id;
-  input.value = text;
+  input.name = id;
+  input.type = type;
+  input.required = boolean;
   div.appendChild(input);
   return div;
 };
@@ -16,14 +19,21 @@ export const contactMe = () => {
 
   const form = document.createElement("form");
   form.className = "contact-form";
-  form.action = "mailto:rago@gmail.com";
-  form.method = "post";
-  form.enctype = "text/plain";
+  form.action = "https://formsubmit.co/rago89@gmail.com";
+  form.method = "POST";
 
-  form.appendChild(inputForm("name", "Name"));
-  form.appendChild(inputForm("email", "Email"));
-  form.appendChild(inputForm("company", "Company"));
-  form.appendChild(inputForm("message", "Message"));
+  form.appendChild(inputForm("text", "name", "Name", true));
+  form.appendChild(
+    inputForm("hidden", "_subject", "Name", "New Email from portfolio")
+  );
+  form.appendChild(inputForm("email", "email", "Email", true));
+  form.appendChild(inputForm("text", "company", "Company"));
+
+  const message = document.createElement("textarea");
+  message.placeholder = "Message";
+  message.id = "message";
+
+  form.appendChild(message);
 
   const submitBtn = document.createElement("input");
   submitBtn.type = "submit";

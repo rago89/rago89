@@ -129,7 +129,7 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1080px) {
   #projects {
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas: "u u u u u" "o o o o o";
