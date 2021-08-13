@@ -1,5 +1,3 @@
-import { router } from "../../init/router.js";
-
 const inputForm = (type, id, text, boolean = false) => {
   const div = document.createElement("div");
   const input = document.createElement("input");
@@ -39,16 +37,18 @@ export const contactMe = () => {
     inputFormHidden("hidden", "_subject", "New Email from portfolio")
   );
   form.appendChild(
-    inputFormHidden("hidden", "_next", router.navigate("thanks"))
+    inputFormHidden("hidden", "_next", "https://rago89.github.io/rago89/thanks")
   );
   form.appendChild(inputForm("email", "email", "Email", true));
   form.appendChild(inputForm("text", "company", "Company"));
 
+  const divMessage = document.createElement("div");
   const message = document.createElement("textarea");
   message.placeholder = "Message";
   message.id = "message";
 
-  form.appendChild(message);
+  divMessage.appendChild(message);
+  form.appendChild(divMessage);
 
   const submitBtn = document.createElement("input");
   submitBtn.type = "submit";
