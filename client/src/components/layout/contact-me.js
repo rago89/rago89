@@ -39,6 +39,7 @@ export const contactMe = () => {
   form.appendChild(
     inputFormHidden("hidden", "_next", "https://rago89.github.io/rago89/thanks")
   );
+  form.appendChild(inputFormHidden("hidden", "_captcha", "false"));
   form.appendChild(inputForm("email", "email", "Email", true));
   form.appendChild(inputForm("text", "company", "Company"));
 
