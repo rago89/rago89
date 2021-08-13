@@ -31,7 +31,7 @@ export const contactMe = () => {
 
   const form = document.createElement("form");
   form.className = "contact-form";
-  form.action = "https://formsubmit.co/rago89@gmail.com";
+  form.action = "6c917af94c93c5226a714654bd1dc78e";
   form.method = "POST";
 
   form.appendChild(inputForm("text", "name", "Name", true));
