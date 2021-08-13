@@ -38,7 +38,9 @@ export const contactMe = () => {
   form.appendChild(
     inputFormHidden("hidden", "_subject", "New Email from portfolio")
   );
-  form.appendChild(inputFormHidden("hidden", "_next", router.navigate("quiz")));
+  form.appendChild(
+    inputFormHidden("hidden", "_next", router.navigate("thanks"))
+  );
   form.appendChild(inputForm("email", "email", "Email", true));
   form.appendChild(inputForm("text", "company", "Company"));
 
