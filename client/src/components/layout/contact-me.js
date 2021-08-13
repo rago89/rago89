@@ -1,3 +1,6 @@
+import { router } from "../../init/router.js";
+import { thanks } from "../pages/thanks/thanks.js";
+
 const inputForm = (type, id, text, boolean = false) => {
   const div = document.createElement("div");
   const input = document.createElement("input");
@@ -36,9 +39,8 @@ export const contactMe = () => {
   form.appendChild(
     inputFormHidden("hidden", "_subject", "New Email from portfolio")
   );
-  form.appendChild(
-    inputFormHidden("hidden", "_next", "https://rago89.github.io/rago89/thanks")
-  );
+  const thanksRoute = router.navigate("thanks");
+  form.appendChild(inputFormHidden("hidden", "_next", thanksRoute));
   form.appendChild(inputFormHidden("hidden", "_captcha", "false"));
   form.appendChild(inputForm("email", "email", "Email", true));
   form.appendChild(inputForm("text", "company", "Company"));
