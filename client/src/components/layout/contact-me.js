@@ -40,7 +40,6 @@ export const contactMe = () => {
   );
   const thanksRoute = router.navigate("thanks");
   form.appendChild(inputFormHidden("hidden", "_next", thanksRoute));
-  form.appendChild(inputFormHidden("hidden", "_captcha", "false"));
   form.appendChild(inputForm("email", "email", "Email", true));
   form.appendChild(inputForm("text", "company", "Company"));
 
