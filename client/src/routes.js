@@ -37,9 +37,9 @@ const routeHandler =
     const namedRoutes = routes.filter((route) => `name` in route);
     const cleanData = { ...data };
     cleanData.id = !data || !("id" in data) ? -1 : data.id;
-    const root = document.querySelector("script");
+    const root = document.getElementById("root");
     root.innerHTML = "";
-    root.after(page(pageBody(parse(data), parse(params)), namedRoutes));
+    root.appendChild(page(pageBody(parse(data), parse(params)), namedRoutes));
   };
 
 [
