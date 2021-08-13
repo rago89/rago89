@@ -4,11 +4,12 @@
   grid-area: e;
   justify-items: center;
   border-radius: 3%;
-  width: 120%;
+  width: 50%;
   height: 150%;
   display: grid;
+  grid-template-columns: 1fr;
   justify-items: center;
-  margin: 3%;
+  margin: auto;
 }
 
 .thanks h2 {

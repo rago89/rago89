@@ -40,7 +40,7 @@ const routeHandler =
     cleanData.id = !data || !("id" in data) ? -1 : data.id;
     const root = document.getElementById("root");
     root.innerHTML = "";
-    root.before(page(pageBody(parse(data), parse(params)), namedRoutes));
+    root.appendChild(page(pageBody(parse(data), parse(params)), namedRoutes));
   };
 
 [
@@ -51,7 +51,7 @@ const routeHandler =
   },
   {
     name: "thanks",
-    path: `/thanks`,
+    path: `/thnks`,
     callback: routeHandler(thanks),
   },
 ].forEach((route) => routes.push(route));

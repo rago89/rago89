@@ -1,5 +1,4 @@
 import { router } from "../../init/router.js";
-import { thanks } from "../pages/thanks/thanks.js";
 
 const inputForm = (type, id, text, boolean = false) => {
   const div = document.createElement("div");
@@ -56,6 +55,7 @@ export const contactMe = () => {
   const submitBtn = document.createElement("input");
   submitBtn.type = "submit";
   submitBtn.value = "send";
+  submitBtn.className = "submit";
 
   form.appendChild(submitBtn);
 
