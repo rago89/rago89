@@ -1,0 +1,35 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "a b c" "d e f" "g h i";
+  grid-auto-rows: 100%;
+}
+
+.thanks {
+  background-color: #010033;
+  color: #fff;
+  grid-area: e;
+  justify-items: center;
+  border-radius: 3%;
+  width: 120%;
+  height: 150%;
+  display: grid;
+  justify-items: center;
+  margin: 3%;
+}
+
+.thanks h2 {
+  font-size: 1.8em;
+  padding: 0%;
+  margin: 4% 0% 0% 0%;
+}
+
+.thanks p {
+  font-size: 1.5em;
+}
+
+.thanks a {
+  color: deepskyblue;
+  font-size: 1.5em;
+}

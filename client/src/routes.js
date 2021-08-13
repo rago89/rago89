@@ -1,5 +1,5 @@
 import { page } from "./components/layout/page.js";
-
+import { thanks } from "./components/pages/thanks/thanks.js";
 import { home } from "./components/pages/home/index.js";
 
 /**
@@ -48,5 +48,10 @@ const routeHandler =
     name: "home",
     path: `/`,
     callback: routeHandler(home),
+  },
+  {
+    name: "thanks",
+    path: `/thanks`,
+    callback: routeHandler(thanks),
   },
 ].forEach((route) => routes.push(route));

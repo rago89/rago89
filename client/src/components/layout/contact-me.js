@@ -1,3 +1,5 @@
+import { router } from "../../init/router.js";
+
 const inputForm = (type, id, text, boolean = false) => {
   const div = document.createElement("div");
   const input = document.createElement("input");
@@ -6,6 +8,16 @@ const inputForm = (type, id, text, boolean = false) => {
   input.name = id;
   input.type = type;
   input.required = boolean;
+  div.appendChild(input);
+  return div;
+};
+
+const inputFormHidden = (type, name, value) => {
+  const div = document.createElement("div");
+  const input = document.createElement("input");
+  input.name = name;
+  input.type = type;
+  input.value = value;
   div.appendChild(input);
   return div;
 };
@@ -24,8 +36,9 @@ export const contactMe = () => {
 
   form.appendChild(inputForm("text", "name", "Name", true));
   form.appendChild(
-    inputForm("hidden", "_subject", "Name", "New Email from portfolio")
+    inputFormHidden("hidden", "_subject", "New Email from portfolio")
   );
+  form.appendChild(inputFormHidden("hidden", "_next", router.navigate("quiz")));
   form.appendChild(inputForm("email", "email", "Email", true));
   form.appendChild(inputForm("text", "company", "Company"));
 
