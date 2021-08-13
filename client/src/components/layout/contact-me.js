@@ -31,7 +31,7 @@ export const contactMe = () => {
 
   const form = document.createElement("form");
   form.className = "contact-form";
-  form.action = "6c917af94c93c5226a714654bd1dc78e";
+  form.action = "https://formsubmit.co/6c917af94c93c5226a714654bd1dc78e ";
   form.method = "POST";
 
   form.appendChild(inputForm("text", "name", "Name", true));
@@ -40,6 +40,7 @@ export const contactMe = () => {
   );
   const thanksRoute = router.navigate("thanks");
   form.appendChild(inputFormHidden("hidden", "_next", thanksRoute));
+  form.appendChild(inputFormHidden("hidden", "_captcha", "false"));
   form.appendChild(inputForm("email", "email", "Email", true));
   form.appendChild(inputForm("text", "company", "Company"));
 
