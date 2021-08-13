@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 import { router } from "../../init/router.js";
 
+=======
+>>>>>>> b33dca7... change form action
 const inputForm = (type, id, text, boolean = false) => {
   const div = document.createElement("div");
   const input = document.createElement("input");
@@ -8,6 +11,7 @@ const inputForm = (type, id, text, boolean = false) => {
   input.name = id;
   input.type = type;
   input.required = boolean;
+<<<<<<< HEAD
   div.appendChild(input);
   return div;
 };
@@ -18,6 +22,8 @@ const inputFormHidden = (type, name, value) => {
   input.name = name;
   input.type = type;
   input.value = value;
+=======
+>>>>>>> b33dca7... change form action
   div.appendChild(input);
   return div;
 };
