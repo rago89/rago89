@@ -12,17 +12,15 @@ import { data } from "../../../data/data.js";
  */
 
 export const page = (bodyComponent) => {
-  const container = document.createElement("div");
+  const container = document.querySelector("#myScript");
 
-  container.appendChild(header(data.navInfo));
+  container.before(header(data.navInfo));
   if (typeof bodyComponent === "function") {
-    container.appendChild(bodyComponent());
+    container.before(bodyComponent);
   } else if (bodyComponent instanceof Element) {
-    container.appendChild(bodyComponent);
+    container.before(bodyComponent);
   } else {
     throw new TypeError("body is not a function or a DOM element");
   }
-  container.appendChild(footer());
-
-  return container;
+  container.before(footer());
 };

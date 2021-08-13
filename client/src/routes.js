@@ -1,5 +1,4 @@
 import { page } from "./components/layout/page.js";
-import { thanks } from "./components/pages/thanks/thanks.js";
 import { home } from "./components/pages/home/index.js";
 
 /**
@@ -38,9 +37,9 @@ const routeHandler =
     const namedRoutes = routes.filter((route) => `name` in route);
     const cleanData = { ...data };
     cleanData.id = !data || !("id" in data) ? -1 : data.id;
-    const root = document.getElementById("root");
+    const root = document.querySelector("script");
     root.innerHTML = "";
-    root.appendChild(page(pageBody(parse(data), parse(params)), namedRoutes));
+    root.after(page(pageBody(parse(data), parse(params)), namedRoutes));
   };
 
 [
@@ -48,10 +47,5 @@ const routeHandler =
     name: "home",
     path: `/`,
     callback: routeHandler(home),
-  },
-  {
-    name: "thanks",
-    path: `/thnks`,
-    callback: routeHandler(thanks),
   },
 ].forEach((route) => routes.push(route));
