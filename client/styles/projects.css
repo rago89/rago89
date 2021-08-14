@@ -24,7 +24,7 @@
   box-shadow: 2px 2px 2px 2px rgba(2, 22, 63, 0.3);
   text-align: center;
   justify-self: center;
-  min-width: 260px;
+  width: 260px;
 }
 
 #btns-container {
@@ -98,8 +98,8 @@
     width: 420px;
   }
 
-  .project {
-    width: auto;
+  #projects .project {
+    width: 210px;
   }
 
   .project h3 {
@@ -267,7 +267,7 @@
   }
 
   .project {
-    width: 170px;
+    width: 140px;
   }
 
   .project h3 {
