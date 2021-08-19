@@ -4,7 +4,7 @@
   grid-template-columns: repeat(6, 1fr);
   grid-template-areas: "h h h h h h" "j j j j j j";
   grid-row-gap: 1em;
-  grid-column-gap: 0.5%;
+  grid-column-gap: 1%;
   grid-row-gap: 2%;
   overflow-y: auto;
 }
