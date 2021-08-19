@@ -18,11 +18,6 @@ export const home = () => {
   bodySection.appendChild(aboutMe());
   bodySection.appendChild(skills());
 
-  // const dataFromApi = typicodeResource("users", "rago89", "repos");
-  // dataFromApi
-  //   .then((response) => renderProject(response))
-  //   .then((body) => body.appendChild(contactMe()));
-
   (async () => {
     const dataFromApi = await typicodeResource("users", "rago89", "repos");
     renderProject(dataFromApi);

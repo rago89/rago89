@@ -4,8 +4,8 @@
   grid-template-columns: repeat(6, 1fr);
   grid-template-areas: "h h h h h h" "j j j j j j";
   grid-row-gap: 1em;
-  grid-column-gap: 1%;
-  grid-row-gap: 5%;
+  grid-column-gap: 2%;
+  grid-row-gap: 2%;
   height: 50%;
   overflow-y: auto;
 }
@@ -18,13 +18,12 @@
 }
 
 .project {
-  max-width: 260px;
+  width: auto;
   background-color: rgba(1, 49, 145, 0.1);
   border-radius: 10%;
   box-shadow: 2px 2px 2px 2px rgba(2, 22, 63, 0.3);
   text-align: center;
-  justify-self: center;
-  min-width: 260px;
+
   min-height: 170px;
 }
 
@@ -86,7 +85,6 @@
   #projects {
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas: "u u u u u" "o o o o o";
-    margin: 0% 1%;
   }
 
   #projects h2 {
@@ -97,10 +95,6 @@
   #btns-container {
     grid-area: o;
     width: 420px;
-  }
-
-  #projects .project {
-    width: 210px;
   }
 
   .project h3 {
@@ -132,7 +126,6 @@
   #projects {
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas: "u u u u u" "o o o o o";
-    margin: 0% 1%;
   }
 
   #projects h2 {
@@ -180,7 +173,7 @@
   #projects {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "j j j" "i i i";
-    margin: 0% 1%;
+    margin: 0%;
   }
 
   #projects h2 {
@@ -189,7 +182,7 @@
   }
 
   .project h3 {
-    font-size: 20px;
+    font-size: 17px;
   }
 
   #btns-container {
@@ -202,7 +195,6 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "j j" "p p";
     grid-gap: 1em;
-    justify-content: center;
     margin: 0% 1%;
   }
 
@@ -219,8 +211,7 @@
   }
 
   .project {
-    width: 180px;
-    justify-self: center;
+    width: auto;
   }
 
   .project h3 {
@@ -242,9 +233,6 @@
     font-size: 12px;
     width: 150px;
     height: 55px;
-    margin: 0%;
-    justify-self: center;
-    align-self: center;
   }
 }
 
@@ -254,6 +242,8 @@
     grid-template-areas: "j j" "p p";
     grid-gap: 0.5em;
     margin: 0% 1%;
+    justify-self: stretch;
+    align-self: stretch;
   }
 
   #projects h2 {
@@ -265,10 +255,6 @@
     grid-area: p;
     display: grid;
     grid-auto-rows: 100px;
-  }
-
-  .project {
-    width: 140px;
   }
 
   .project h3 {
