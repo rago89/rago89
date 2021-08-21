@@ -74,7 +74,6 @@
 
 @media screen and (max-width: 1024px) {
   #contact-me {
-    background-color: rgba(1, 49, 145, 0.1);
     display: grid;
     grid-template-columns: 1.5fr;
     grid-template-rows: 1fr;
