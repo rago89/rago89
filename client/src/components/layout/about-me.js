@@ -16,7 +16,7 @@ export const aboutMe = () => {
 
   const p1El = document.createElement("p");
   p1El.innerHTML =
-    "Hi I'm Rafael Garcia, Civil Engineer starting in tha amazing world of Web Development, actually I'm studying with tha amazing team of hack your future Belgium, mastering HTML5, CSS3, JavaScript, , you can follow my work on GitHub.";
+    "Hi I'm Rafael Garcia, I'm starting in tha amazing world of Web Development, actually I'm studying with tha amazing team of Hack Your Future Belgium, mastering HTML5, CSS3, JavaScript.";
   paragraphContainer.appendChild(p1El);
 
   const p2El = document.createElement("p");
