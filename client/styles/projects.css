@@ -201,10 +201,11 @@
 
 @media screen and (max-width: 480px) {
   #projects {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "j j" "p p";
+    grid-template-columns: repeat(2, 180px);
     grid-gap: 1em;
+    grid-template-areas: "j j" "p p";
     margin: 0% 1%;
+    justify-items: center;
   }
 
   #projects h2 {
@@ -220,7 +221,7 @@
   }
 
   .project {
-    width: 190px;
+    width: 180px;
     height: auto;
   }
 
