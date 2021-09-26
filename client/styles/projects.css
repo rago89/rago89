@@ -7,6 +7,7 @@
   grid-row-gap: 2%;
   justify-content: center;
   height: 70vw;
+  margin: 0% 2%;
 }
 
 #projects h2 {
@@ -86,6 +87,7 @@
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas: "u u u u u" "o o o o o";
     height: 80vw;
+    margin: 0% 2%;
   }
 
   #projects h2 {
@@ -132,6 +134,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "u u u u " "o o o o ";
     height: 120vw;
+    margin: 0% 2%;
   }
 
   #projects h2 {
@@ -184,7 +187,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "j j j" "i i i";
     height: 270vw;
-    margin: 10% 2%;
+    margin: 10% 3%;
 
   }
 

@@ -5,6 +5,7 @@
   grid-template-areas: " header header " "form img";
   grid-template-rows: 25%;
   width: auto;
+  padding: 0% 5%;
 }
 
 #contact-me h2 {
