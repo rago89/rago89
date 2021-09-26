@@ -1,24 +1,25 @@
+
+
 #projects {
   background-color: (1, 49, 145, 0.1);
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 15%);
   grid-template-areas: "h h h h h h" "j j j j j j";
-  grid-row-gap: 1em;
   grid-column-gap: 1%;
   grid-row-gap: 2%;
-  overflow-y: auto;
+  justify-content: center;
+  height: 70vw;
 }
 
 #projects h2 {
-  font-size: 40px;
+  font-size: 3.5vw;
   grid-area: h;
   justify-self: center;
   margin: 0;
 }
 
-.project {
-  width: auto;
-  height: 220px;
+#projects .project {
+
   background-color: rgba(1, 49, 145, 0.1);
   border-radius: 10%;
   box-shadow: 2px 2px 2px 2px rgba(2, 22, 63, 0.3);
@@ -32,19 +33,19 @@
   justify-self: center;
 }
 
-.project > h3 {
-  font-size: 1.3em;
-  justify-content: center;
+#projects  .project  h3 {
+  font-size: 1.2vw;
+  justify-content: left;
 }
 
-.project > p {
-  font-size: 1em;
+#projects  .project  p {
+  font-size: 0.85vw;
   justify-content: center;
 }
 
 .button-projects {
   width: 187px;
-  height: auto;
+  height: 54px;
   padding: 15px 25px;
   background-color: #3344dd;
   color: #fff;
@@ -83,8 +84,10 @@
 
 @media screen and (max-width: 1200px) {
   #projects {
+    display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas: "u u u u u" "o o o o o";
+    height: 80vw;
   }
 
   #projects h2 {
@@ -96,19 +99,16 @@
     grid-area: o;
     width: 420px;
   }
+
+
+  #projects  .project  h3 {
+    font-size: 1.3vw;
+    justify-content: left;
+  }
   
-  .project {
-    width: 100%;
-    height: 100%;
-  }
-
-
-  .project h3 {
-    font-size: 17px;
-  }
-
-  .project p {
-    font-size: 12px;
+  #projects  .project  p {
+    font-size: 1.3vw;
+    justify-content: center;
   }
 
   #projects div .mini-img-project {
@@ -130,8 +130,10 @@
 
 @media screen and (max-width: 1080px) {
   #projects {
+    display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas: "u u u u u" "o o o o o";
+    height: 120vw;
   }
 
   #projects h2 {
@@ -149,12 +151,14 @@
     height: auto;
   }
 
-  .project h3 {
-    font-size: 17px;
+  #projects  .project  h3 {
+    font-size: 1.3vw;
+    justify-content: left;
   }
-
-  .project p {
-    font-size: 12px;
+  
+  #projects  .project  p {
+    font-size: 1.1vw;
+    justify-content: center;
   }
 
   #projects div .mini-img-project {
@@ -178,20 +182,28 @@
 
 @media screen and (max-width: 768px) {
   #projects {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "j j j" "i i i";
-    margin: 0%;
+    height: 280vw;
+    margin: 0% 2%;
   }
 
   #projects h2 {
     margin-top: 50px;
     grid-area: none;
     grid-area: j;
-    font-size: 35px;
+    font-size: 5vw;
   }
 
-  .project h3 {
-    font-size: 17px;
+  #projects  .project  h3 {
+    font-size: 2.3vw;
+    justify-content: left;
+  }
+  
+  #projects  .project  p {
+    font-size: 1.8vw;
+    justify-content: center;
   }
 
   #btns-container {
@@ -201,11 +213,13 @@
 
 @media screen and (max-width: 480px) {
   #projects {
-    grid-template-columns: repeat(2, 180px);
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
     grid-gap: 1em;
     grid-template-areas: "j j" "p p";
     margin: 0% 1%;
     justify-content: center;
+    height: 350vw;
   }
 
   #projects h2 {
@@ -220,13 +234,14 @@
     grid-auto-rows: 75px;
   }
 
-  .project {
-    width: 180px;
-    height: auto;
+  #projects  .project  h3 {
+    font-size: 3.3vw;
+    justify-content: left;
   }
-
-  .project h3 {
-    font-size: 15px;
+  
+  #projects  .project  p {
+    font-size: 2.5vw;
+    justify-content: center;
   }
 
   .project p {
@@ -249,11 +264,13 @@
 
 @media screen and (max-width: 360px) {
   #projects {
-    grid-template-columns: repeat(2, 180px);
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
     grid-gap: 1em;
     grid-template-areas: "j j" "p p";
     margin: 0% 1%;
     justify-content: center;
+    height: 650vw;
   }
 
   #projects h2 {
@@ -268,12 +285,14 @@
     grid-auto-rows: 100px;
   }
 
-  .project h3 {
-    font-size: 15px;
+  #projects  .project  h3 {
+    font-size: 3.7vw;
+    justify-content: left;
   }
-
-  .project p {
-    font-size: 12px;
+  
+  #projects  .project  p {
+    font-size: 3.2vw;
+    justify-content: center;
   }
 
   #projects div .mini-img-project {
