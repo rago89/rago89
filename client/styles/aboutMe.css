@@ -16,7 +16,6 @@
 }
 
 .paragraph {
-
   font-size: 2.3vw;
   width: 95%;
   grid-area: description;
@@ -50,15 +49,28 @@
 
   #about-me h2 {
     grid-area: title;
+    font-size: 3.8vw;
   }
 
   .paragraph {
+    font-size: 3.6vw;
+    text-align: center;
+    grid-area: description;
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #about-me h2 {
+    grid-area: title;
+    font-size: 5.8vw;
+  }
+
+  .paragraph {
+    font-size: 4.3vw;
     text-align: center;
     grid-area: description;
     justify-self: center;
   }
 
-  .paragraph p {
-    font-size: 0.8em;
-  }
 }
