@@ -133,7 +133,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "u u u u " "o o o o ";
-    height: 120vw;
+    height: 140vw;
     margin: 0% 2%;
   }
 
