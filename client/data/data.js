@@ -92,6 +92,12 @@ export const data = {
       path: "./client/public/images/express.png",
       alt: "node-express",
     },
+    {
+      class: "logo",
+      type: "sqlite",
+      path: "./client/public/images/sqlite.png",
+      alt: "node-express",
+    },
   ],
   projects: {
     studyProjects: [],
