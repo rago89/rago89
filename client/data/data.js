@@ -83,7 +83,7 @@ export const data = {
     {
       class: "logo",
       type: "rest-api",
-      path: "./client/public/images/rest-api.jpg",
+      path: "./client/public/images/rest-api.png",
       alt: "rest-api",
     },
     {
