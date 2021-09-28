@@ -80,6 +80,18 @@ export const data = {
       path: "./client/public/images/node.png",
       alt: "Node logo",
     },
+    {
+      class: "logo",
+      type: "rest-api",
+      path: "./client/public/images/rest-api.jpg",
+      alt: "rest-api",
+    },
+    {
+      class: "logo",
+      type: "express js",
+      path: "./client/public/images/express.png",
+      alt: "node-express",
+    },
   ],
   projects: {
     studyProjects: [],
