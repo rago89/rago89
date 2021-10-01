@@ -1,3 +1,3 @@
 export const config = {
-  repoName: "rago89",
+	repoName: '',
 };
