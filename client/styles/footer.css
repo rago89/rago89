@@ -1,9 +1,0 @@
-#main-footer {
-  height: auto;
-  background-color: #010033;
-  color: #ffffff;
-  height: 50px;
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-}
